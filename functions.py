@@ -8,3 +8,12 @@ try:
     print('iteration will probably work')
 except TypeError:
     print('not iterable')
+
+# Check if a generator has items in it or not    
+def isEmpty(iterable):
+    try:
+        next(iterable)
+        return False
+    except StopIteration:
+        return True
+    
