@@ -37,8 +37,8 @@ BASE_FOLDER = 'C:\\repo\\'
 env_file = BASE_FOLDER + "\\.env"
 load_dotenv(dotenv_path=env_file)
 
-ORACLE_USER = os.getenv("ORACLE_USER")
-ORACLE_PWD = os.getenv("ORACLE_PWD")
+DB_USER = os.getenv("DB_USER")
+DB_PWD = os.getenv("DB_PWD")
 
 # Fetching environment variables from the env file (option 2)
 # This technique is smart as it uses the path of this script to find the working directory
@@ -51,8 +51,8 @@ from dotenv import load_dotenv
 env_file = BASE_FOLDER + "\\.env"
 load_dotenv(dotenv_path=env_file)
 
-ORACLE_USER = os.getenv("ORACLE_USER")
-ORACLE_PWD = os.getenv("ORACLE_PWD")
+DB_USER = os.getenv("DB_USER")
+DB_PWD = os.getenv("DB_PWD")
 
-print(ORACLE_USER) # Just to be sure
-print(ORACLE_PWD) # Just to be sure
+print(DB_USER) # Just to be sure
+print(DB_PWD) # Just to be sure
